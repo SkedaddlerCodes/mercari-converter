@@ -15,7 +15,17 @@ body {
     background-color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    min-height: 400px; /* Ensure there's enough height for the content */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+    display: inline-block;
 }
 
 h1 {
@@ -88,10 +98,30 @@ footer h3 {
 footer ul {
     list-style-type: disc;
     margin-left: 20px;
-    padding-left: 20px; /* Add padding for proper indentation */
-    text-align: justify;  /* Ensure the list is aligned left */
+    padding-left: 20px;
+    text-align: justify;
 }
 
 footer li {
     margin-bottom: 8px;
+}
+
+.instagram-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.instagram-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #333;
 }
