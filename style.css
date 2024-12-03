@@ -23,9 +23,16 @@ header {
 }
 
 header img {
-    max-width: 100%;
+    max-width: 200px; /* Default size for desktops */
     height: auto;
     display: inline-block;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    header img {
+        max-width: 150px; /* Smaller size for mobile screens */
+    }
 }
 
 h1 {
