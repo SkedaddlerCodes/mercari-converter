@@ -1,8 +1,8 @@
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f7fa;
-    color: #333;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #f4f7fa;
     margin: 0;
     padding: 0;
 }
@@ -44,6 +44,7 @@ h1 {
 label {
     font-size: 1.1em;
     margin-bottom: 10px;
+    color: #333;
 }
 
 input {
@@ -58,7 +59,7 @@ input {
 }
 
 button {
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;
     font-size: 1.1em;
     padding: 12px 24px;
@@ -67,10 +68,11 @@ button {
     cursor: pointer;
     width: 100%;
     max-width: 300px;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
 }
 
 #result {
@@ -111,6 +113,10 @@ footer li {
     display: flex;
     align-items: center;
     gap: 15px;
+    background-color: #f4f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile-pic {
@@ -120,8 +126,19 @@ footer li {
     object-fit: cover;
 }
 
-.instagram-info p {
-    margin: 0;
-    font-size: 0.9em;
+.profile-name {
+    font-size: 1em;
+    font-weight: bold;
     color: #333;
+    margin: 0;
+}
+
+.instagram-link {
+    font-size: 0.9em;
+    color: #6a11cb;
+    text-decoration: none;
+}
+
+.instagram-link:hover {
+    text-decoration: underline;
 }
