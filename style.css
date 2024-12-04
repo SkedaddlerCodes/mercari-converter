@@ -159,6 +159,7 @@ footer li {
     font-size: 0.9em;
     color: #555;
     margin-top: 20px;
+    text-align: center;
 }
 
 /* Media Query for Small Screens */
