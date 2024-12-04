@@ -43,14 +43,20 @@ header img {
 }
 
 h1 {
+    font-size: 2em; /* Default font size */
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
-    display: inline; /* Ensures it remains inline */
-    text-align: center;
+    text-align: center; /* Ensure the text is centered */
 }
 
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Adjust font size to fit on one line */
+    }
+}
 .emoji {
     font-size: 2em; /* Match emoji size to text */
     display: inline-block; /* Keep it in the same line */
