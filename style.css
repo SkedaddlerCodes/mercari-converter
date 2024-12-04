@@ -51,12 +51,6 @@ h1 {
     text-align: center; /* Ensure the text is centered */
 }
 
-/* Media Query for Small Screens */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1em; /* Adjust font size to fit on one line */
-    }
-}
 .emoji {
     display: inline-block; /* Keep it in the same line */
 }
@@ -182,7 +176,7 @@ footer li {
 /* Media Query for Small Screens */
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     input, button {
