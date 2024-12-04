@@ -48,10 +48,12 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
+    display: inline; /* Ensures it remains inline */
 }
 
 .emoji {
     font-size: 2em; /* Match emoji size to text */
+    display: inline-block; /* Keep it in the same line */
 }
 
 .calculator {
