@@ -34,20 +34,24 @@ header img {
         max-width: 150px;
     }
 }
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between emoji and text */
+}
+
 h1 {
-    text-align: center;
     font-size: 2em;
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 30px;
+    margin: 0;
 }
 
-h1 .emoji {
-    -webkit-background-clip: initial; /* Reset background clipping */
-    -webkit-text-fill-color: initial; /* Reset text fill color */
-    background: none; /* Remove background */
-    color: initial; /* Use default emoji color */
+.emoji {
+    font-size: 2em; /* Match emoji size to text */
 }
 
 .calculator {
