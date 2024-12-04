@@ -34,7 +34,6 @@ header img {
         max-width: 150px;
     }
 }
-
 h1 {
     text-align: center;
     font-size: 2em;
@@ -45,9 +44,10 @@ h1 {
 }
 
 h1 .emoji {
-    background: none; /* Reset background for emojis */
+    -webkit-background-clip: initial; /* Reset background clipping */
     -webkit-text-fill-color: initial; /* Reset text fill color */
-    color: #000; /* Optional: Set a specific color for emojis */
+    background: none; /* Remove background */
+    color: initial; /* Use default emoji color */
 }
 
 .calculator {
