@@ -43,17 +43,12 @@ header img {
 }
 
 h1 {
-    font-size: 1.5em; /* Default font size */
+    font-size: 2em; /* Default font size */
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
     text-align: center; /* Ensure the text is centered */
-}
-
-.emoji {
-    font-size: 1em;
-    display: inline-block; /* Keep it in the same line */
 }
 
 .calculator {
@@ -177,7 +172,7 @@ footer li {
 /* Media Query for Small Screens */
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     input, button {
