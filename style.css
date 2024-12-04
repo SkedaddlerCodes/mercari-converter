@@ -23,7 +23,7 @@ header {
 }
 
 header img {
-    max-width: 200px; /* Default size for desktops */
+    max-width: 200px;
     height: auto;
     display: inline-block;
     margin: 0 auto;
@@ -31,7 +31,7 @@ header img {
 
 @media (max-width: 600px) {
     header img {
-        max-width: 150px; /* Smaller size for mobile screens */
+        max-width: 150px;
     }
 }
 
@@ -153,6 +153,12 @@ footer li {
 
 .instagram-link:hover {
     text-decoration: underline;
+}
+
+.last-updated {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 20px;
 }
 
 /* Media Query for Small Screens */

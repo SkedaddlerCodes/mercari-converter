@@ -41,11 +41,24 @@
                 <li>Waiting time is 2-3 months.</li>
                 <li>ISF and customs for a single photocard is less than 100. For multiple photocards, it will increase.</li>
                 <li>ISF+customs for an album depends on its weight or volume, whichever is higher.</li>
-                <li>Please conduct due diligence regarding items purchased. Damaged or counterfeit items from the mercari seller's side are not my responsibility.</li>
+                <li>Make sure the listing says 'Shipping included' in the price</li>
+                <li>Please conduct due diligence regarding items purchased. Damaged or counterfeit items from the Mercari seller's side are not my responsibility.</li>
                 <li>For any other Japan-based purchases or queries, please DM.</li>
             </ul>
+            <p class="last-updated">Last Updated: <span id="lastUpdated"></span></p>
         </footer>
     </div>
+    <script>
+        // Get the last modified date of the document
+        const lastModified = new Date(document.lastModified);
+
+        // Format the date in a readable format
+        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
+        const formattedDate = lastModified.toLocaleDateString('en-US', options);
+
+        // Display the date in the placeholder
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
     <script src="scripts.js"></script>
 </body>
 </html>
