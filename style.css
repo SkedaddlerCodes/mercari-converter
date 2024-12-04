@@ -49,6 +49,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     margin: 0;
     display: inline; /* Ensures it remains inline */
+    text-align: center;
 }
 
 .emoji {
