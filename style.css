@@ -44,6 +44,12 @@ h1 {
     margin-bottom: 30px;
 }
 
+h1 .emoji {
+    background: none; /* Reset background for emojis */
+    -webkit-text-fill-color: initial; /* Reset text fill color */
+    color: #000; /* Optional: Set a specific color for emojis */
+}
+
 .calculator {
     display: flex;
     flex-direction: column;
