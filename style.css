@@ -51,7 +51,9 @@ h1 {
     text-align: center; /* Ensure the text is centered */
 }
 
+
 .emoji {
+    font-size: 1em;
     display: inline-block; /* Keep it in the same line */
 }
 
