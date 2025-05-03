@@ -32,6 +32,12 @@
         <div class="calculator">
             <label for="yenAmount">Enter Amount Of The Listing In Yen:</label>
             <input type="number" id="yenAmount" placeholder="Enter amount in Yen">
+            <br>
+            <label for="itemCount">Number of Items in Listing:</label>
+            <select id="itemCount">
+              <option value="lt10">Less than 10 items</option>
+              <option value="gte10">10 or more items</option>
+            </select>
             <button onclick="calculateINR()">Calculate</button>
             <h2 id="result"></h2>
         </div>
