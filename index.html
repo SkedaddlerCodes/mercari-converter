@@ -6,6 +6,143 @@
     <title>🐧 Mercari Base Price Calculator 🧿</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://cdn.dribbble.com/users/113499/screenshots/6971887/penguin.png?format=webp&resize=800x600&vertical=center" type="image/png">
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Instagram profile section */
+        .instagram-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .instagram-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .instagram-link {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        /* Title and header section */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .mercari-logo {
+            max-width: 200px;
+            margin-top: 10px;
+        }
+
+        /* Main content */
+        .title-container h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .calculator {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            margin: 5px 0 20px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            font-size: 1.2rem;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        footer h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        footer ul li {
+            margin: 8px 0;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
 </head>
 <body class="mobile-friendly">
     <div class="container">
@@ -35,9 +172,10 @@
             <br>
             <label for="itemCount">Number of Items in Listing:</label>
             <select id="itemCount">
-              <option value="lt10">Less than 10 items</option>
+              <option value="lt10" selected>Less than 10 items</option>
               <option value="gte10">10 or more items</option>
             </select>
+            <br>
             <button onclick="calculateINR()">Calculate</button>
             <h2 id="result"></h2>
         </div>
